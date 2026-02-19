@@ -40,7 +40,7 @@ def prewarm(proc: JobProcess):
     proc.userdata["vad"] = silero.VAD.load()
 
 
-class RimeAssistant(Agent):
+class VoiceAssistant(Agent):
     """LiveKit Agent powered by Rime TTS.
 
     Configures the LLM system prompt that governs the assistant's personality
@@ -92,7 +92,7 @@ async def entrypoint(ctx: JobContext):
 
     await session.start(
         room=ctx.room,
-        agent=RimeAssistant(),
+        agent=VoiceAssistant(),
         room_input_options=RoomInputOptions(
             noise_cancellation=noise_cancellation.BVC()
         ),
