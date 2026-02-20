@@ -859,7 +859,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "livekit", specifier = ">=1.1.2" },
-    { name = "livekit-agents", extras = ["deepgram", "openai", "rime", "silero", "turn-detector"], specifier = "~=1.3" },
+    { name = "livekit-agents", extras = ["deepgram", "openai", "rime", "silero", "turn-detector"], specifier = "~=1.4.2" },
     { name = "livekit-plugins-noise-cancellation", specifier = "~=0.2" },
     { name = "load-dotenv", specifier = ">=0.1.0" },
 ]

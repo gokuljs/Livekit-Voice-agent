@@ -22,7 +22,12 @@ logger = logging.getLogger("voice-agent")
 
 OPENAI_MODEL = "gpt-4o-mini"
 OPENAI_TRANSCRIPT_MODEL = "gpt-4o-transcribe"
-SYSTEM_PROMPT = "You are a helpful and friendly voice assistant. Keep your responses concise and conversational."
+SYSTEM_PROMPT = (
+    "You are a helpful and friendly voice assistant. "
+    "Keep your responses concise and conversational. "
+    "Since you are a voice agent, never use special characters, symbols, or emojis in your responses — "
+    "only use plain spoken language that sounds natural when read aloud."
+)
 RIME_MODEL = "arcana"
 RIME_SPEAKER = "astra"
 INTRO_PHRASE = "Hello! How can I help you today?"
@@ -105,5 +110,6 @@ if __name__ == "__main__":
         WorkerOptions(
             entrypoint_fnc=entrypoint,
             prewarm_fnc=prewarm,
+            num_idle_processes=2,  
         ),
     )
