@@ -1,6 +1,6 @@
 # LiveKit Voice Agent
 
-A complete voice conversation pipeline built with [LiveKit](https://livekit.io/), [OpenAI](https://openai.com/), and [Rime](https://rime.ai/). This project demonstrates how to wire together a full **STT → LLM → TTS** loop to create natural, bidirectional voice conversations — and serves as a practical starting point for building your own voice agents on LiveKit.
+A complete voice conversation pipeline built with [LiveKit](https://livekit.io/), [OpenAI](https://openai.com/), and [Rime](https://rime.ai/). This project demonstrates how to wire together a full **STT → LLM → TTS** loop to create natural, bidirectional voice conversations, and serves as a practical starting point for building your own voice agents on LiveKit.
 
 ---
 
@@ -53,7 +53,7 @@ cd livekit-agent
 ### 2. Install `uv`
 
 ```bash
-brew install uv        # macOS — skip if already installed
+brew install uv        # macOS (skip if already installed)
 ```
 
 ### 3. Configure environment variables
@@ -78,16 +78,16 @@ RIME_API_KEY=<your-rime-api-key>
 
 #### Where to find each key
 
-**LiveKit** — [cloud.livekit.io](https://cloud.livekit.io/login)
+**LiveKit** - [cloud.livekit.io](https://cloud.livekit.io/login)
 1. Sign up or log in
 2. Go to **Settings → API Keys**
 3. Generate an API key + secret and copy your project WebSocket URL
 
-**OpenAI** — [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+**OpenAI** - [platform.openai.com/api-keys](https://platform.openai.com/api-keys)
 1. Sign up or log in
 2. Go to **Dashboard → API Keys → Create new secret key**
 
-**Rime** — [app.rime.ai/tokens](https://app.rime.ai/tokens/)
+**Rime** - [app.rime.ai/tokens](https://app.rime.ai/tokens/)
 1. Sign up or log in
 2. Generate a new API token from the dashboard
 
@@ -101,15 +101,16 @@ uv run main.py download-files
 
 ## Running the Agent
 
-### Console mode *(local testing — no LiveKit room required)*
+### Console mode *(local testing, no LiveKit room required)*
 
 ```bash
 uv run main.py console
 ```
 
-Runs the full pipeline in your terminal. Speak into your microphone and the agent will respond over your speakers — great for rapid iteration without needing a cloud room.
+Runs the full pipeline in your terminal. Speak into your microphone and the agent will respond over your speakers. Great for rapid iteration without needing a cloud room.
 
 ### Development mode *(connects to LiveKit Cloud)*
+
 
 ```bash
 uv run main.py dev
