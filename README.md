@@ -4,6 +4,12 @@ A complete voice conversation pipeline built with [LiveKit](https://livekit.io/)
 
 ---
 
+## Demo
+
+[![LiveKit Voice Agent Demo](https://img.youtube.com/vi/t2J8ce1vdtc/maxresdefault.jpg)](https://youtu.be/t2J8ce1vdtc)
+
+---
+
 ## Architecture
 
 ```mermaid
