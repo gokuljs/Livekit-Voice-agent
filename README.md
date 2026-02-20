@@ -6,7 +6,9 @@ A complete voice conversation pipeline built with [LiveKit](https://livekit.io/)
 
 ## Demo
 
-[![LiveKit Voice Agent Demo](https://img.youtube.com/vi/t2J8ce1vdtc/hqdefault.jpg)](https://youtu.be/t2J8ce1vdtc)
+<a href="https://youtu.be/t2J8ce1vdtc">
+  <img src="https://img.youtube.com/vi/t2J8ce1vdtc/hqdefault.jpg" alt="LiveKit Voice Agent Demo" width="100%" />
+</a>
 
 ---
 
